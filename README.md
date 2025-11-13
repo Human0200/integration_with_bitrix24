@@ -5,8 +5,8 @@
 ```
 /local/
 ├── classes/
-│   └── FormBitrix24Handler.php  (новый класс)
+│   └── FormBitrix24Handler.php 
 ├── logs/
-│   └── bitrix24.log  (создастся автоматически)
+│   └── bitrix24.log 
 └── php_interface/
-    └── init.php  (добавить код выше)
+    └── init.php  
