@@ -1,5 +1,4 @@
-<?php
-// Подключаем класс интеграции с Bitrix24
+<?
 require_once($_SERVER['DOCUMENT_ROOT'] . '/local/classes/FormBitrix24Handler.php');
 
 use Bitrix\Main\EventManager;
@@ -14,8 +13,4 @@ $eventManager->addEventHandler(
 );
 
 // Обработчик для заказов - отправка в Bitrix24
-$eventManager->addEventHandler(
-    'sale',
-    'OnSaleOrderSaved',
-    ['FormBitrix24Handler', 'onOrderSaved']
-);
+AddEventHandler('sale', 'OnSaleOrderSaved', ['FormBitrix24Handler', 'onOrderSaved']);
